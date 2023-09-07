@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maksym Zubkov - Personal Interests</title>
   <style>
     body {
@@ -101,6 +102,50 @@
     }
     p {
       line-height: 1.6;
+    }
+	
+	@media only screen and (max-width: 768px) {
+      #navigation h1 {
+        font-size: 24px;
+        margin: 5px;
+      }
+
+      #navigation a {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      #profile-section, #content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-video {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+
+      .photo {
+        max-width: 100%;
+        margin-left: 0;
+      }
+
+      #content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin: 10px;
+      }
+
+      #content > div, #content > img {
+        margin-bottom: 20px;
+      }
+
+      h1, h2, p {
+        text-align: center;
+      }
     }
   </style>
 </head>
