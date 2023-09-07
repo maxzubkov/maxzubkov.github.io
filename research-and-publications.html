@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maksym Zubkov - Research & Publications</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #333333;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Shimmer Effect for Navigation */
+    #navigation {
+      background: linear-gradient(90deg, #999999 25%, #888888 50%, #999999 75%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite linear;
+      color: white;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -100% 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
+
+    /* Hover Effect for Navigation Links */
+    #navigation a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    #navigation a:hover {
+      color: #ffcc00;
+    }
+
+    #navigation h1 {
+      margin: 10px;
+      color: black;
+      font-weight: bold;
+      font-size: 35px;
+    }
+
+    #profile-section {
+      display: flex;
+      align-items: start;
+    }
+
+    /* Transition Effect for Profile Photo */
+    .photo {
+      border: 3px solid #007bff;
+      border-radius: 12px;
+      max-width: 400px;
+      max-height: 300px;
+	  margin-top: 40px;
+      transition: transform 0.3s ease;
+    }
+    .photo:hover {
+      transform: scale(1.1);
+    }
+
+    .profile-video {
+      position: absolute;
+	  margin-right: 10px;
+      top: 10px;
+      right: 0;
+      border-radius: 8px;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      width: 275px;
+      z-index: 2;
+    }
+
+    #content {
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      margin: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+    h1, h2, h3 {
+      color: #333333;
+    }
+    a {
+      color: #007bff;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navigation">
+    <a href="./index.html"><h1>Maksym Zubkov</h1></a>
+    <a href="./index.html">Home</a>
+    <a href="./research-and-publications.html">Research & Publications</a>
+    <a href="./teaching-experience.html">Teaching Experience</a>
+    <a href="./personal-interests.html">Personal Interests</a>
+  </div>
+
+  <div id="profile-section">
+    <img src="./media/home-gif.gif" class="profile-video" alt="Some description" />
+  </div>
+
+  <div id="content">
+    <img src="./media/research.jpg" class="photo" alt="Research" />
+    <div class="text-content">
+      <h1>Research & Publications</h1>
+      <h3>Current Research: Lagrangian Grassmann Manifolds</h3>
+	<p>
+	  In my present project, I am focused on real Lagrangian Grassmann manifolds within finite real Euclidean spaces. Specifically, I am engaged in the removal of subsets comprised of Lagrangian subspaces that are non-transversal to a predetermined, finite collection of vector subspaces in our Euclidean space. 
+	</p>
+
+	<p>
+	  In a particular special case, I have developed a conjecture concerning the topology of the resulting open complement, <em>U</em>. Additionally, I have a conjecture that considers a potential connection of this topology to its complex analogue.
+	</p>
+
+	<p>
+	  This project also branches into the study of the image of the Principal Minor map. This map engenders an oriented Lagrangian matroid, the different orientations of which serve as a lower bound for the connected components of the initial space above.
+	</p>
+
+	<h3>Exploring Determinantal Point Processes (DPP)</h3>
+	<p>
+	  As real symmetric matrices are primary component in DPP definition, I am engage in a research of determinantal point processes through the framework of algebraic statistics. The first approach was to count the critical points of the log-likelihood function. There was a success to compute them for small-scale models. This approach allowed to disprove a standing conjecture proposed by Brunel, Moitra, Rigollet, and Urschel.
+	</p>
+
+	<h3>Additional Research Interests: Polynomial Maps and Neural Networks</h3>
+	<p>
+	  Beyond my primary project, I maintain a broad interest in studying the image of polynomial maps. This focus has also led me to engage in research related to Deep Polynomial Neural Networks.
+	</p>
+
+
+      <h2>Publications</h2>
+      <ul>
+		<li> <a href="https://arxiv.org/abs/2307.13486">Likelihood Geometry of Determinantal Point Processes</a> (with Hannah Friedman and Bernd Sturmfels) submitted
+        <li> <a href="https://nyjm.albany.edu/j/2017/23-58.html#:~:text=We%20prove%20that%20chromatic%20graph%20homology%20for%20commutative,the%20Hochschild%20cochain%20complex%20of%20an%20associative%20algebra.">Chromatic Graph Homology for Brace Algebras</a> (with Vladimir Baranovsky) published in New York J. Math. 23 (2017) 1307–1319</li>
+      </ul>
+
+      <h2>Presentations at Conferences and Seminars</h2>
+      <ul>
+		<li>"Topology of the Complement of Determinantal Variety" - Summer 2023, Leipzig University</li>
+        <li>“Applications of Riemann-Roch Theorem” - Fall 2021, UC Berkeley Student Algebraic Curve Seminar</li>
+        <li>“Trace and Cyclic Homology” - Spring 2021, UC Irvine Graduate Algebra Seminar</li>
+        <li>“Colored Jones Polynomials” - Fall 2019, UC Berkeley Student Topology Seminar</li>
+        <li>“Hyperbolic Dehn Surgeries” - Spring 2019, UC Berkeley Student Topology Seminar</li>
+        <li>“Chromatic Graph Homology for Brace Algebras” - January 2018, Joint Mathematics Meetings 2018 in San Diego</li>
+        <li>“Homotopy Commutative Algebras, Knots and Graphs” - July 2018, MAA MathFest Conference [Chicago]</li>
+        <li>“Homotopy Algebras: A-infinity, E2, and Brace” - May 2017, UC Irvine Graduate Algebra Seminar</li>
+        <li>“Preliminaries on Knot Theory: Jones Polynomials and Vassiliev Invariant” - March 2017, UC Irvine Undergraduate Math Club</li>
+      </ul>
+
+      <h2>Conferences Attended</h2>
+      <ul>
+		<li>Numbers in the Universe in Kyiv, Ukraine - August 2023</li>
+		<li>SIAM Conference on Applied Algebraic Geometry in Eindhoven, Netherlands - July 2023</li>
+		<li>Algebraic and topological interplay of algebraic varieties in Jaca, Spain - June 2023</li>
+        <li>Joint Mathematics Meetings 2018 in San Diego, USA - January 2018</li>
+        <li>Field of Dreams Conference 2017 in St. Louis, USA - November 2017</li>
+        <li>Interactions between Representation Theory and Algebraic Geometry in Chicago, USA - August 2017</li>
+        <li>MAA MathFest Conference 2017 in Chicago, USA - July 2017</li>
+      </ul>
+
+      <h1>Contact</h1>
+      <p>
+        For collaboration or other research-related inquiries, you can reach me by email at <a href="mailto:mzubkov@berkeley.edu">mzubkov@berkeley.edu</a>.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maksym Zubkov - Personal Interests</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #333333;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Shimmer Effect for Navigation */
+    #navigation {
+      background: linear-gradient(90deg, #999999 25%, #888888 50%, #999999 75%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite linear;
+      color: white;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -100% 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
+
+    /* Hover Effect for Navigation Links */
+    #navigation a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    #navigation a:hover {
+      color: #ffcc00;
+    }
+
+    #navigation h1 {
+      margin: 10px;
+      color: black;
+      font-weight: bold;
+      font-size: 35px;
+    }
+
+    #profile-section {
+      display: flex;
+      align-items: start;
+    }
+
+    /* Transition Effect for Profile Photo */
+    .photo {
+      border: 3px solid #007bff;
+      border-radius: 12px;
+      max-width: 400px;
+      max-height: 300px;
+	  margin-top: 40px;
+      transition: transform 0.3s ease;
+    }
+    .photo:hover {
+      transform: scale(1.1);
+    }
+
+    .profile-video {
+      position: absolute;
+	  margin-right: 10px;
+      top: 10px;
+      right: 0;
+      border-radius: 8px;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      width: 275px;
+      z-index: 2;
+    }
+
+    #content {
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      margin: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+    h1, h2, h3 {
+      color: #333333;
+    }
+    a {
+      color: #007bff;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navigation">
+    <a href="./index.html"><h1>Maksym Zubkov</h1></a>
+    <a href="./index.html">Home</a>
+    <a href="./research-and-publications.html">Research & Publications</a>
+    <a href="./teaching-experience.html">Teaching Experience</a>
+    <a href="./personal-interests.html">Personal Interests</a>
+  </div>
+
+  <div id="profile-section">
+    <img src="./media/home-gif.gif" class="profile-video" alt="Some description" />
+  </div>
+
+  <div id="content">
+    <img src="./media/interests.jpg" class="photo" alt="At one of Ukrainian events" />
+    <div class="text-content">
+      <h1>Personal Interests</h1>
+      <p>
+        Aside from academics, I have a wide range of interests that enrich my life.
+      </p>
+
+      <h2>YouTube Channel</h2>
+      <p>
+        I maintain a <a href="https://www.youtube.com/mathforlife">YouTube channel</a> where I share insightful videos for fun and educational purposes. It serves as a platform for me to explain complex mathematical problems in a comprehensible manner.
+      </p>
+
+      <h2>Volunteering</h2>
+      <p>
+        Due to the war in Ukraine, I took a one-year off (Spring 2022 and Fall 2022). In the first 6 months of the war, I founded a 501c3 non-profit organization called <a href="https://www.supportukrainewithus.com/">"Support Ukraine With Us"</a> while residing in the U.S. I spent the next 6 months in Ukraine, specifically in Dnipro, Kyiv, and Lviv, working on various humanitarian projects. In this year, I was able to raise around $200,000 for aid.
+      </p>
+      <p>
+        This experience had a profound impact on me, ultimately influencing the direction of my current research since my return to Berkeley in January 2023.
+      </p>
+
+      <h2>Private Tutoring</h2>
+      <p>
+        I have been offering private tutoring services since 2013, providing tailored lessons to students in various mathematical fields.
+      </p>
+
+    </div>
+  </div>
+
+</body>
+</html>

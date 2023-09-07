@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maksym Zubkov - Teaching Experience</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #333333;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Shimmer Effect for Navigation */
+    #navigation {
+      background: linear-gradient(90deg, #999999 25%, #888888 50%, #999999 75%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite linear;
+      color: white;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -100% 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
+
+    /* Hover Effect for Navigation Links */
+    #navigation a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    #navigation a:hover {
+      color: #ffcc00;
+    }
+
+    #navigation h1 {
+      margin: 10px;
+      color: black;
+      font-weight: bold;
+      font-size: 35px;
+    }
+
+    #profile-section {
+      display: flex;
+      align-items: start;
+    }
+
+    /* Transition Effect for Profile Photo */
+    .photo {
+      border: 3px solid #007bff;
+      border-radius: 12px;
+      max-width: 400px;
+      max-height: 300px;
+	  margin-top: 40px;
+      transition: transform 0.3s ease;
+    }
+    .photo:hover {
+      transform: scale(1.1);
+    }
+
+    .profile-video {
+      position: absolute;
+	  margin-right: 10px;
+      top: 10px;
+      right: 0;
+      border-radius: 8px;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      width: 275px;
+      z-index: 2;
+    }
+
+    #content {
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+      margin: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+    h1, h2, h3 {
+      color: #333333;
+    }
+    a {
+      color: #007bff;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navigation">
+    <a href="./index.html"><h1>Maksym Zubkov</h1></a>
+    <a href="./index.html">Home</a>
+    <a href="./research-and-publications.html">Research & Publications</a>
+    <a href="./teaching-experience.html">Teaching Experience</a>
+    <a href="./personal-interests.html">Personal Interests</a>
+  </div>
+
+  <div id="profile-section">
+    <img src="./media/home-gif.gif" class="profile-video" alt="Some description" />
+  </div>
+
+<div id="content">
+    <img src="./media/teaching.jpg" class="photo" alt="Giving a talk at Leipzig University" />
+    <div class="text-content">
+	  <h1>Teaching Experience</h1>
+	  <h2>Lecturer, UC Berkeley</h2>
+      <ul>
+        <li>Math 53: Multivariable Calculus - Summer 2019, Summer 2021</li>
+      </ul>
+	
+      <h2>Graduate Student Instructor, UC Berkeley</h2>
+      <ul>
+        <li>Math 53: Multivariable Calculus - Fall 2018, Spring 2019, Fall 2019</li>
+        <li>Math 32: Precalculus - Spring 2020, Fall 2020</li>
+        <li>Math 16B: Calculus - Spring 2021, Fall 2021</li>
+        <li>Math 16A: Calculus - Spring 2023, Fall 2023</li>
+      </ul>
+      
+      <h2>Supplemental Math Instructor, UC Irvine</h2>
+      <ul>
+        <li>Math 2D: Multivariable Calculus - Spring 2019, Winter 2018, Fall 2017, Spring 2017</li>
+        <li>Math 2B: Integral Calculus - Summer 2017</li>
+        <li>Math 2A: Integral Calculus - Summer 2017</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
