@@ -47,6 +47,18 @@
 
 </head>
 
+<style>
+
+    /* Math Grid background */
+    canvas#gridCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+  </style>
+  
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH" defer></script>
 <script>
@@ -58,6 +70,7 @@
 </script>
 
 <body>
+<canvas id="gridCanvas"></canvas>
   <header id="navigation" aria-label="Main Navigation">
     <a href="./index.html"><h1>Maksym Zubkov</h1></a>
     <nav>
@@ -103,5 +116,41 @@
   </section>
 
   </main>
+  
+  <script>
+    // JavaScript to draw the grid
+    const canvas = document.getElementById("gridCanvas");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      drawGrid();
+    }
+
+    function drawGrid() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = "#ddd"; // Grid color
+      ctx.lineWidth = 0.5;
+
+      // Draw vertical lines
+      for (let i = 0; i <= canvas.width; i += 20) {
+        ctx.moveTo(i, 0);
+        ctx.lineTo(i, canvas.height);
+        ctx.stroke();
+      }
+
+      // Draw horizontal lines
+      for (let j = 0; j <= canvas.height; j += 20) {
+        ctx.moveTo(0, j);
+        ctx.lineTo(canvas.width, j);
+        ctx.stroke();
+      }
+    }
+
+    // Initialize canvas size and grid
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+  </script>
 </body>
 </html>
