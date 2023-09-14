@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO Meta Tags -->
@@ -41,155 +42,11 @@
   "description": "We study determinantal point processes (DPP) through the lens of algebraic statistics. We count the critical points of the log-likelihood function, and we compute them for small models, thereby disproving a conjecture of Brunel, Moitra, Rigollet and Urschel."
 }
 </script>
-  
-  <style>
-    body {
-      background-color: #ffffff;
-      color: #333333;
-      font-family: 'Helvetica', 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
 
-    /* Shimmer Effect for Navigation */
-    #navigation {
-      background: linear-gradient(90deg, #999999 25%, #888888 50%, #999999 75%);
-      background-size: 200% 100%;
-      animation: shimmer 3s infinite linear;
-      color: white;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      padding: 25px;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: -100% 0;
-      }
-      100% {
-        background-position: 100% 0;
-      }
-    }
-
-    /* Hover Effect for Navigation Links */
-    #navigation a {
-      color: white;
-      margin-right: 20px;
-      text-decoration: none;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-    #navigation a:hover {
-      color: #ffcc00;
-    }
-
-    #navigation h1 {
-      margin: 10px;
-      color: black;
-      font-weight: bold;
-      font-size: 35px;
-    }
-
-    #profile-section {
-      display: flex;
-      align-items: start;
-    }
-
-    /* Transition Effect for Profile Photo */
-    .photo {
-      border: 3px solid #007bff;
-      border-radius: 12px;
-      max-width: 400px;
-      max-height: 300px;
-	  margin-top: 40px;
-      transition: transform 0.3s ease;
-    }
-    .photo:hover {
-      transform: scale(1.1);
-    }
-
-    .profile-video {
-      position: absolute;
-	  margin-right: 10px;
-      top: 10px;
-      right: 0;
-      border-radius: 8px;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      width: 275px;
-      z-index: 2;
-    }
-
-    #content {
-      padding: 30px;
-      background: #ffffff;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      margin: 20px;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: flex-start;
-    }
-
-    .text-content {
-      flex: 1;
-    }
-    h1, h2, h3 {
-      color: #333333;
-    }
-    a {
-      color: #007bff;
-    }
-    p {
-      line-height: 1.6;
-    }
-	
-	@media only screen and (max-width: 768px) {
-      #navigation h1 {
-        font-size: 24px;
-        margin: 5px;
-      }
-
-      #navigation a {
-        font-size: 16px;
-        margin-right: 10px;
-      }
-
-      #profile-section, #content {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .profile-video {
-        width: 100%;
-        position: relative;
-        top: 0;
-        right: 0;
-      }
-
-      .photo {
-        max-width: 100%;
-        margin-left: 0;
-      }
-
-      #content {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        margin: 10px;
-      }
-
-      #content > div, #content > img {
-        margin-bottom: 20px;
-      }
-
-      h1, h2, p {
-        text-align: center;
-      }
-    }
-  </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH" defer></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -199,22 +56,26 @@
 </script>
 
 <body>
-
-  <div id="navigation">
+  <header id="navigation" aria-label="Main Navigation">
     <a href="./index.html"><h1>Maksym Zubkov</h1></a>
-    <a href="./index.html">Home</a>
-    <a href="./research-and-publications.html">Research</a>
-    <a href="./teaching-experience.html">Teaching</a>
-    <a href="./personal-interests.html">Other</a>
-  </div>
+    <nav>
+      <a href="./index.html" aria-label="Home">Home</a>
+      <a href="./research-and-publications.html" aria-label="Research">Research</a>
+      <a href="./teaching-experience.html" aria-label="Teaching">Teaching</a>
+      <a href="./personal-interests.html" aria-label="Other Interests">Other</a>
+    </nav>
+  </header>
 
-  <div id="content">
-    <img src="./media/research.jpg" loading="lazy" class="photo" alt="Research" />
-    <div class="text-content">
-      <h1>Research & Publications</h1>
+  <main id="content">
+  <section id="profile-section">
+    <div class="profile-container">
+		<img src="./media/research.jpg" loading="lazy" class="photo" alt="Research" aria-label="Version of Persistence Diagram" />
+		<article class="profile-info">
+			<h1>Research & Publications</h1>
       <h3>Current Research: Lagrangian Grassmann Manifolds</h3>
 	<p>
-	  In my present project, I am focused on real Lagrangian Grassmann manifolds within finite real Euclidean spaces. Specifically, I am engaged in the removal of subsets comprised of Lagrangian subspaces that are non-transversal to a predetermined, finite collection of vector subspaces in our Euclidean space. 
+	  In my present project, I am focused on real Lagrangian Grassmann manifolds within finite real  
+	<br> Euclidean spaces. Specifically, I am engaged in the removal of subsets comprised of Lagrangian subspaces that are non-transversal to a predetermined, finite collection of vector subspaces in our Euclidean space. 
 	</p>
 
 	<p>
@@ -270,15 +131,14 @@
       <p>
         For collaboration or other research-related inquiries, you can reach me by email at <a href="mailto:mzubkov@berkeley.edu">mzubkov@berkeley.edu</a>.
       </p>
+    </section>
+      </article>
     </div>
-  </div>
+    <aside class="profile-video-container">
+      <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="A gif showing various aspects of Maksym Zubkov's life and work" aria-label="Life and work of Maksym Zubkov" />
+    </aside>
+  </section>
 
-  <div id="profile-section">
-    <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="Some description" />
-  </div>
-
-</body>
-</html>
-
+  </main>
 </body>
 </html>

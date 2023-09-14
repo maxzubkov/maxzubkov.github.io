@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO Meta Tags -->
@@ -25,7 +26,7 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Maksym Zubkov - Personal Interests</title>
-  
+
   <script type="application/ld+json">
 	{
 	  "@context": "http://schema.org",
@@ -47,156 +48,11 @@
 	  "interests": ["Volunteering", "YouTube video creation", "Private Tutoring"]
 	}
 	</script>
-  
-  <style>
-    body {
-      background-color: #ffffff;
-      color: #333333;
-      font-family: 'Helvetica', 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
 
-    /* Shimmer Effect for Navigation */
-    #navigation {
-      background: linear-gradient(90deg, #999999 25%, #888888 50%, #999999 75%);
-      background-size: 200% 100%;
-      animation: shimmer 3s infinite linear;
-      color: white;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      padding: 25px;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: -100% 0;
-      }
-      100% {
-        background-position: 100% 0;
-      }
-    }
-
-    /* Hover Effect for Navigation Links */
-    #navigation a {
-      color: white;
-      margin-right: 20px;
-      text-decoration: none;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-    #navigation a:hover {
-      color: #ffcc00;
-    }
-
-    #navigation h1 {
-      margin: 10px;
-      color: black;
-      font-weight: bold;
-      font-size: 35px;
-    }
-
-    #profile-section {
-      display: flex;
-      align-items: start;
-    }
-
-    /* Transition Effect for Profile Photo */
-    .photo {
-      border: 3px solid #007bff;
-      border-radius: 12px;
-      max-width: 400px;
-      max-height: 300px;
-	  margin-top: 40px;
-	  margin-left: 10px;
-      transition: transform 0.3s ease;
-    }
-    .photo:hover {
-      transform: scale(1.1);
-    }
-
-    .profile-video {
-      position: absolute;
-	  margin-right: 10px;
-      top: 10px;
-      right: 0;
-      border-radius: 8px;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      width: 275px;
-      z-index: 2;
-    }
-
-    #content {
-      padding: 30px;
-      background: #ffffff;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      margin: 20px;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: flex-start;
-    }
-
-    .text-content {
-      flex: 1;
-    }
-    h1, h2, h3 {
-      color: #333333;
-    }
-    a {
-      color: #007bff;
-    }
-    p {
-      line-height: 1.6;
-    }
-	
-	@media only screen and (max-width: 768px) {
-      #navigation h1 {
-        font-size: 24px;
-        margin: 5px;
-      }
-
-      #navigation a {
-        font-size: 16px;
-        margin-right: 10px;
-      }
-
-      #profile-section, #content {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .profile-video {
-        width: 100%;
-        position: relative;
-        top: 0;
-        right: 0;
-      }
-
-      .photo {
-        max-width: 100%;
-        margin-left: 0;
-      }
-
-      #content {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        margin: 10px;
-      }
-
-      #content > div, #content > img {
-        margin-bottom: 20px;
-      }
-
-      h1, h2, p {
-        text-align: center;
-      }
-    }
-  </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH" defer></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -206,48 +62,51 @@
 </script>
 
 <body>
-
-  <div id="navigation">
+  <header id="navigation" aria-label="Main Navigation">
     <a href="./index.html"><h1>Maksym Zubkov</h1></a>
-    <a href="./index.html">Home</a>
-    <a href="./research-and-publications.html">Research</a>
-    <a href="./teaching-experience.html">Teaching</a>
-    <a href="./personal-interests.html">Other</a>
-  </div>
+    <nav>
+      <a href="./index.html" aria-label="Home">Home</a>
+      <a href="./research-and-publications.html" aria-label="Research">Research</a>
+      <a href="./teaching-experience.html" aria-label="Teaching">Teaching</a>
+      <a href="./personal-interests.html" aria-label="Other Interests">Other</a>
+    </nav>
+  </header>
 
-  <div id="content">
-    <img src="./media/interests.jpg" loading="lazy" class="photo" alt="At one of Ukrainian events" />
-    <div class="text-content">
-      <h1>Personal Interests</h1>
-      <p>
-        Aside from academics, I have a wide range of interests that enrich my life.
-      </p>
+  <main id="content">
+  <section id="profile-section">
+    <div class="profile-container">
+		<img src="./media/interests.jpg" loading="lazy" class="photo" alt="At one of Ukrainian events" aria-label="Picture of Maksym Zubkov" />
+		<article class="profile-info">
+        <h1>Personal Interests</h1>
+		  <p>
+			Aside from academics, I have a wide range of interests that enrich my life.
+		  </p>
 
-	  <h2>Volunteering</h2>
-      <p>
-        Due to the war in Ukraine, I took a one-year off (Spring 2022 and Fall 2022). In the first 6 months of the war, I founded a 501c3 non-profit organization called <a href="https://www.supportukrainewithus.com/">"Support Ukraine With Us"</a> while residing in the U.S. I spent the next 6 months in Ukraine, specifically in Dnipro, Kyiv, and Lviv, working on various humanitarian projects. In this year, I was able to raise around $200,000 for aid.
-      </p>
-      <p>
-        This experience had a profound impact on me, ultimately influencing the direction of my current research since my return to Berkeley in January 2023.
-      </p>
+		  <h2>Volunteering</h2>
+		  <p>
+			Due to the war in Ukraine, I took a one-year off (Spring 2022 and Fall 2022). In the first 6 months of the war, I founded a 501c3 non-profit organization called <a href="https://www.supportukrainewithus.com/">"Support Ukraine With Us"</a> while residing in the U.S. I spent the next 6 months in Ukraine, specifically in Dnipro, Kyiv, and Lviv, working on various humanitarian projects. In this year, I was able to raise around $200,000 for aid.
+		  </p>
+		  <p>
+			This experience had a profound impact on me, ultimately influencing the direction of my current research since my return to Berkeley in January 2023.
+		  </p>
 
-      <h2>YouTube Channel</h2>
-      <p>
-        I maintain a <a href="https://www.youtube.com/mathforlife">YouTube channel</a> where I share insightful videos for fun and educational purposes. It serves as a platform for me to explain complex mathematical problems in a comprehensible manner.
-      </p>
+		  <h2>YouTube Channel</h2>
+		  <p>
+			I maintain a <a href="https://www.youtube.com/mathforlife">YouTube channel</a> where I share insightful videos for fun and educational purposes. It serves as a platform for me to explain complex mathematical problems in a comprehensible manner.
+		  </p>
 
-      <h2>Private Tutoring</h2>
-      <p>
-        I have been offering private tutoring services since 2013, providing tailored lessons to students in various mathematical fields.
-      </p>
-
+		  <h2>Private Tutoring</h2>
+		  <p>
+			I have been offering private tutoring services since 2013, providing tailored lessons to students in various mathematical fields.
+		  </p>
+    </section>
+      </article>
     </div>
-  </div>
+    <aside class="profile-video-container">
+      <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="A gif showing various aspects of Maksym Zubkov's life and work" aria-label="Life and work of Maksym Zubkov" />
+    </aside>
+  </section>
 
-  <div id="profile-section">
-    <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="Some description" />
-  </div>
-
-
+  </main>
 </body>
 </html>

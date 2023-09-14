@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO Meta Tags -->
@@ -44,154 +45,10 @@
 	}
 	</script>
 
-  <style>
-    body {
-      background-color: #ffffff;
-      color: #333333;
-      font-family: 'Helvetica', 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Shimmer Effect for Navigation */
-    #navigation {
-      background: linear-gradient(90deg, #999999 25%, #888888 50%, #999999 75%);
-      background-size: 200% 100%;
-      animation: shimmer 3s infinite linear;
-      color: white;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      padding: 25px;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: -100% 0;
-      }
-      100% {
-        background-position: 100% 0;
-      }
-    }
-
-    /* Hover Effect for Navigation Links */
-    #navigation a {
-      color: white;
-      margin-right: 20px;
-      text-decoration: none;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-    #navigation a:hover {
-      color: #ffcc00;
-    }
-
-    #navigation h1 {
-      margin: 10px;
-      color: black;
-      font-weight: bold;
-      font-size: 35px;
-    }
-
-    #profile-section {
-      display: flex;
-      align-items: start;
-    }
-
-    /* Transition Effect for Profile Photo */
-    .photo {
-      border: 3px solid #007bff;
-      border-radius: 12px;
-      max-width: 400px;
-      max-height: 300px;
-	  margin-top: 40px;
-      transition: transform 0.3s ease;
-    }
-    .photo:hover {
-      transform: scale(1.1);
-    }
-
-    .profile-video {
-      position: absolute;
-	  margin-right: 10px;
-      top: 10px;
-      right: 0;
-      border-radius: 8px;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      width: 275px;
-      z-index: 2;
-    }
-
-    #content {
-      padding: 30px;
-      background: #ffffff;
-      box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
-      margin: 20px;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: flex-start;
-    }
-
-    .text-content {
-      flex: 1;
-    }
-    h1, h2, h3 {
-      color: #333333;
-    }
-    a {
-      color: #007bff;
-    }
-    p {
-      line-height: 1.6;
-    }
-	
-	@media only screen and (max-width: 768px) {
-      #navigation h1 {
-        font-size: 24px;
-        margin: 5px;
-      }
-
-      #navigation a {
-        font-size: 16px;
-        margin-right: 10px;
-      }
-
-      #profile-section, #content {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .profile-video {
-        width: 100%;
-        position: relative;
-        top: 0;
-        right: 0;
-      }
-
-      .photo {
-        max-width: 100%;
-        margin-left: 0;
-      }
-
-      #content {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        margin: 10px;
-      }
-
-      #content > div, #content > img {
-        margin-bottom: 20px;
-      }
-
-      h1, h2, p {
-        text-align: center;
-      }
-    }
-  </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH" defer></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -201,47 +58,50 @@
 </script>
 
 <body>
-
-  <div id="navigation">
+  <header id="navigation" aria-label="Main Navigation">
     <a href="./index.html"><h1>Maksym Zubkov</h1></a>
-    <a href="./index.html">Home</a>
-    <a href="./research-and-publications.html">Research</a>
-    <a href="./teaching-experience.html">Teaching</a>
-    <a href="./personal-interests.html">Other</a>
-  </div>
+    <nav>
+      <a href="./index.html" aria-label="Home">Home</a>
+      <a href="./research-and-publications.html" aria-label="Research">Research</a>
+      <a href="./teaching-experience.html" aria-label="Teaching">Teaching</a>
+      <a href="./personal-interests.html" aria-label="Other Interests">Other</a>
+    </nav>
+  </header>
 
-<div id="content">
-    <img src="./media/teaching.jpg" loading="lazy" class="photo" alt="Giving a talk at Leipzig University" />
-    <div class="text-content">
-	  <h1>Teaching Experience</h1>
-	  <h2>Lecturer, UC Berkeley</h2>
-      <ul>
-        <li>Math 53: Multivariable Calculus - Summer 2019, Summer 2021</li>
-      </ul>
-	
-      <h2>Graduate Student Instructor, UC Berkeley</h2>
-      <ul>
-        <li>Math 53: Multivariable Calculus - Fall 2018, Spring 2019, Fall 2019</li>
-        <li>Math 32: Precalculus - Spring 2020, Fall 2020</li>
-        <li>Math 16B: Calculus - Spring 2021, Fall 2021</li>
-        <li>Math 16A: Calculus - Spring 2023, Fall 2023</li>
-      </ul>
-      
-      <h2>Supplemental Math Instructor, UC Irvine</h2>
-      <ul>
-        <li>Math 2D: Multivariable Calculus - Spring 2019, Winter 2018, Fall 2017, Spring 2017</li>
-        <li>Math 2B: Integral Calculus - Summer 2017</li>
-        <li>Math 2A: Integral Calculus - Summer 2017</li>
-      </ul>
+  <main id="content">
+  <section id="profile-section">
+    <div class="profile-container">
+		<img src="./media/teaching.jpg" loading="lazy" class="photo" alt="Giving a talk at Leipzig University" aria-label="Picture of Maksym Zubkov" />
+		<article class="profile-info">
+			<h1>Teaching Experience</h1>
+			  <h2>Lecturer, UC Berkeley</h2>
+			  <ul>
+				<li>Math 53: Multivariable Calculus - Summer 2019, Summer 2021</li>
+			  </ul>
+			
+			  <h2>Graduate Student Instructor, UC Berkeley</h2>
+			  <ul>
+				<li>Math 53: Multivariable Calculus - Fall 2018, Spring 2019, Fall 2019</li>
+				<li>Math 32: Precalculus - Spring 2020, Fall 2020</li>
+				<li>Math 16B: Calculus - Spring 2021, Fall 2021</li>
+				<li>Math 16A: Calculus - Spring 2023, Fall 2023</li>
+			  </ul>
+			
+			  
+			  <h2>Supplemental Math Instructor, UC Irvine</h2>
+			  <ul>
+				<li>Math 2D: Multivariable Calculus - Spring 2019, Winter 2018, Fall 2017, Spring 2017</li>
+				<li>Math 2B: Integral Calculus - Summer 2017</li>
+				<li>Math 2A: Integral Calculus - Summer 2017</li>
+			  </ul>
+    </section>
+      </article>
     </div>
-  </div>
+    <aside class="profile-video-container">
+      <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="A gif showing various aspects of Maksym Zubkov's life and work" aria-label="Life and work of Maksym Zubkov" />
+    </aside>
+  </section>
 
-  <div id="profile-section">
-    <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="Some description" />
-  </div>
-
+  </main>
 </body>
 </html>
-
-
-
