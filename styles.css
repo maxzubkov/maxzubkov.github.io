@@ -132,8 +132,8 @@ ul li {
 .profile-video-container {
 	float: right; /* This will push the GIF to the right */
 	position: absolute;
-	top: 90px;
-	right: 5px;
+	top: 500px;
+	left: 75px;
 	z-index: 1;
 }
 
