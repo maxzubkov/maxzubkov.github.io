@@ -326,4 +326,9 @@ a:hover {
         left: 0;
         position: relative;
     }
+
+    th, td {
+        font-size: 14px; /* Smaller font size for table content */
+        padding: 4px; /* Adjust padding to fit smaller text */
+    }
 }
