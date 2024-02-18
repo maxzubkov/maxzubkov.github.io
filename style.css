@@ -318,9 +318,9 @@ a:hover {
     }
 
     #image-block img {
-        width: 95%; /* Make the image occupy the full width of its container */
-        max-width: 95%; /* Ensure it doesn't exceed the container's width */
-        margin: 5px; /* Optional: for centering if there's any specific need */
+        width: 90%; /* Make the image occupy the full width of its container */
+        max-width: 90%; /* Ensure it doesn't exceed the container's width */
+        margin: 0px; /* Optional: for centering if there's any specific need */
         height: auto; /* Maintain the image's aspect ratio */
     }
 
