@@ -340,11 +340,9 @@ a:hover {
     }
 
     th, td {
-        font-size: 14px; /* Smaller font size for table content */
-        padding: 4px; /* Adjust padding to fit smaller text */
+        font-size: 12px; /* Smaller font size for table content */
+        padding: 2px; /* Adjust padding to fit smaller text */
     }
-
-    
 
     #navigation a {
         padding: 5px;
