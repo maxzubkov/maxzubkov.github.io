@@ -10,7 +10,7 @@ to display nicely on a cellphone body, html {
 }
 
         body {
-            font-family: 'Segoe UI';
+            font-family: Arial, sans-serif;
         }
         table {
             width: 100%;
@@ -54,17 +54,11 @@ to display nicely on a cellphone body, html {
     margin: 0 15px;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    padding: 10px;
 }
 
 #navigation a:hover {
     color: #4CAF50; /* Highlight color on hover */
 }
-
-#navigation h1, #navigation nav {
-    margin: 10px 0;
-}
-
 
 #corner {
     width: 100px;
