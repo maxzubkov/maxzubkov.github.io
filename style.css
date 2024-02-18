@@ -295,7 +295,7 @@ a:hover {
         max-width: 100%; /* Allow both to take full width on smaller screens */
         flex-basis: auto; /* Reset flex-basis for the vertical stacking */
         width: calc(100% - 20px); /* Adjust width to account for padding or margin if necessary */
-        margin: 10px; /* Adjusted margin */
+        margin: 20px; /* Adjusted margin */
         padding: 15px;
         box-sizing: border-box; /* Important to prevent exceeding the viewport width */
         order: 1; /* Make sure content container comes first */
@@ -313,16 +313,15 @@ a:hover {
         width: 100%; /* Take the full width */
         text-align: center; /* Adjust if you want to center-align the image */
         order: 2; /* This ensures the image block comes after the content container */
-        margin-top: 0px; /* Ensure there's space between content and image */
-        margin-bottom: 5px;
     }
 
     #image-block img {
-        width: 90%; /* Make the image occupy the full width of its container */
-        max-width: 90%; /* Ensure it doesn't exceed the container's width */
-        margin: 0px; /* Optional: for centering if there's any specific need */
-        height: auto; /* Maintain the image's aspect ratio */
+        width: 90%; /* Adjust if necessary to account for any padding/margin */
+        max-width: 90%; /* Ensure it can grow up to the full width */
+        margin: 5px auto; /* Center the image if needed, remove horizontal margin */
     }
+
+
 
     #corner, #special-effects {
         display: none; /* Hide elements not needed on small screens */
