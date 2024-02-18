@@ -344,14 +344,7 @@ a:hover {
         padding: 4px; /* Adjust padding to fit smaller text */
     }
 
-    #navigation {
-        flex-direction: row;
-    }
-
-    #navigation nav {
-        display: flex;
-        flex-direction: row;
-    }
+    
 
     #navigation a {
         padding: 5px;
