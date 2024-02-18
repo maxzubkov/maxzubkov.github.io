@@ -78,15 +78,19 @@
             <div class="profile-container">
             <article class="profile-info">
             <h1>Research</h1>
-            <button class="collapsible">Direction I: Totally Non-degenerate Quadratic Forms</button>
+            <button class="collapsible">Direction I: Quadratic Forms</button>
             <div class="content hidden">
               <p>
-              I am interested in studying a space of real symmetric matrices with non-vanishing principal minors.
-              <br>
+              I am interested in geometry of a space of totally non-degenerate real quadratic forms.
+              They are local models of ridgy Lagrangians introduced as a tool in the arborealization program.
+              There is an equivalent notion of principally regular matrices i.e. a space of real symmetric matrices
+              all whose principal minors are non-zero.
+              </p>
+              <p>
               I formulated the conjecture that every connected component of the
-              space is contractible. Studying semialgebraic sets that are given via the sign assignments to
+              space is contractible. Studying semialgebraic sets that are given via the sign pattern assignments to
               all principal minors is equivalent to studying orientations on the uniform-oriented Lagrangian
-              matroid. Currently, I am working on proving my conjecture and generalizing it to symmetric tensors with orthogonal decomposition.
+              matroid.
               </p>
             </div>
 
@@ -94,11 +98,17 @@
             <button class="collapsible">Direction II: Geometry of Deep Polynomial Neural Networks and Tensor Decomposition</button>
             <div class="content hidden">
               <p>
-              I am interested in exploring the connection between Deep Polynomial Neural Networks (DPNN) and Tensor Decomposition.
+              I am interested in exploring the connection between Deep Polynomial Neural Networks and Tensor Decomposition.
               <br>
-              Different DPNN architectures can be reformulated as a space of tensors with a special type of decomposition.
-              I am also interested in a semialgebraic description of a closure of the weight map, i.e. a map from all the weights to a functional space.
-              I want to develop tools from real algebraic geometry and tensor decomposition to study polynomial maps and their applications in neural networks.
+              I am fascinated with algebra of neural networks, thinking about the topology of the image of parameter space inside
+              the model space. Also, it leads to some thoughts about the landscape of a loss function during the training process.
+              One of the main goal is to get a better understanding of these well described neural networks and, possibly, jump on
+              CNN networks and other architectures.
+              </p>
+              <p>
+              For example, shallow polynomial networks with a single output has a space of homogeneous polynomials
+              as a model space and training that network is equivalent to finding a symmetric CP-rank approximation
+              of a given symmetric tensor.
               </p>
             </div>
 
@@ -108,8 +118,9 @@
             <button class="collapsible">Direction III: Algebraic Statistics and Optimization</button>
             <div class="content hidden">
               <p>
-              I am also interested in thinking about applications of Direction 1 and 2 in algebraic statistics (Determinantal Point Process, higher-order statistics)
-              and in non-convex optimization (Euclidean distance degree).
+              I am also interested in thinking about applications of Direction 1 and 2 in algebraic statistics
+              (Determinantal Point Process, Directed Graphical Models) and in non-convex optimization
+              (a landscape of a loss function).
               </p>
             </div>
 
@@ -119,12 +130,23 @@
             <button class="collapsible">Side Quest: Topological Data Analysis and Neural Networks</button>
             <div class="content hidden">
               <p>
-              One of the main sources of my inspiration and motivation is to do numerical experiments. For Direction I, I generate a point cloud approximation of
-              each connected component and study its topology using ripser i.e. Persistent Homology. I worked with a point cloud of sizes up to a million points which brings its
+              One of the main sources of my inspiration and motivation is to do numerical experiments.
+              </p>
+              <p>
+              For <b>Direction I</b>, I generate a point cloud approximation of each connected component and study its topology using
+              ripser i.e. persistent homology. I worked with a point cloud of sizes up to a million points which brings its
               challenges. I use Lawrence Berkeley National Laboratory clusters to do my computation in Python and C++.
-              For Direction II, I have constructed polynomial neural networks of different architectures to observe computationally my theoretical findings and to experiment
-              with certain architectures to make conjectures or understand the behavior. For Direction III, I used homotopy continuation to count the number of critical points
-              for the log likelihood function.
+              </p>
+              <p>
+              For <b>Direction II</b>, I have constructed polynomial neural networks of different architectures to observe
+              computationally my theoretical findings and to experiment with certain architectures to make conjectures or
+              understand the geometry and behavior of neural network architectures.
+              </p>
+              <p>
+              For <b>Direction III</b>, I use homotopy
+              continuation to count the number of critical points for the log likelihood function and a combination of
+              persistence homology and principal component analysis to understand a landcsape of a loss function and behavior
+              of a neural network during training process.
               </p>
             </div>
 
