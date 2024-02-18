@@ -106,6 +106,7 @@ to display nicely on a cellphone body, html {
 }
 
 .content-container {
+    overflow-x: auto; /* Allows horizontal scrolling */
     margin-top: 0px;
     flex-basis: 81%; /* Allocate 80% of the space to content-container */
     background-color: #fff;
