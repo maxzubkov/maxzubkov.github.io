@@ -1,6 +1,7 @@
 </body>
 </html>
 to display nicely on a cellphone body, html {
+    overflow-x: hidden; /* Hide horizontal overflow */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -106,7 +107,6 @@ to display nicely on a cellphone body, html {
 }
 
 .content-container {
-    overflow-x: auto; /* Allows horizontal scrolling */
     margin-top: 0px;
     flex-basis: 81%; /* Allocate 80% of the space to content-container */
     background-color: #fff;
@@ -299,6 +299,12 @@ a:hover {
         padding: 15px;
         box-sizing: border-box; /* Important to prevent exceeding the viewport width */
         order: 1; /* Make sure content container comes first */
+    }
+
+    .content-container table {
+        display: block;
+        overflow-x: auto; /* Make table scrollable horizontally */
+        white-space: nowrap; /* Optional: Prevents wrapping of table content */
     }
 
     #image-block {
