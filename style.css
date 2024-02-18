@@ -335,6 +335,12 @@ a:hover {
 
     th, td {
         font-size: 12px; /* Smaller font size for table content */
-        padding: 2px; /* Adjust padding to fit smaller text */
+        padding: 10px 5px; /* Adjust padding to fit smaller text */
+        white-space: normal;
+    }
+
+    .content-container table {
+        /* Ensure the table layout is not altered */
+        display: table;
     }
 }
