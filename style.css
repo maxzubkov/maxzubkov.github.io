@@ -300,7 +300,7 @@ a:hover {
         max-width: 100%; /* Allow both to take full width on smaller screens */
         flex-basis: auto; /* Reset flex-basis for the vertical stacking */
         width: 100% ; /* Adjust width to account for padding or margin if necessary */
-        margin: 10px; /* Adjusted margin */
+        margin: 5px; /* Adjusted margin */
         padding: 10px;
         box-sizing: border-box; /* Important to prevent exceeding the viewport width */
         order: 1; /* Make sure content container comes first */
@@ -327,6 +327,7 @@ a:hover {
         width: 95%; /* Adjust if necessary to account for any padding/margin */
         max-width: 95%; /* Ensure it can grow up to the full width */
         margin: 0 auto;
+        padding-bottom: 10px;
     }
 
 
