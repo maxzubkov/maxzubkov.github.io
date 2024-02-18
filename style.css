@@ -172,7 +172,7 @@ canvas#gridCanvas {
     display: block;
     max-width: 100%; /* Ensures the image is never wider than its container */
     height: auto; /* Maintains the aspect ratio */
-    margin: 0px auto; /* Centers the image and adds some space around it */
+    margin: 5px auto; /* Centers the image and adds some space around it */
 }
 
 .collapsible {
