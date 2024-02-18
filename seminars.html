@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Basic Meta Tags -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO Meta Tags -->
@@ -43,21 +44,7 @@
     "image": "https://maksymzubkov.info/media/seminars.jpg"
   }
   </script>
-
-
 </head>
-
-<style>
-
-    /* Math Grid background */
-    canvas#gridCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-  </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH" defer></script>
@@ -70,146 +57,158 @@
 </script>
 
 <body>
-<canvas id="gridCanvas"></canvas>
-<header id="navigation" aria-label="Main Navigation">
-  <a href="./index.html"><h1>Maksym (Max) Zubkov</h1></a>
-  <nav>
-    <a href="./index.html" aria-label="Home">Home</a>
-    <a href="./research-and-publications.html" aria-label="Research">Research</a>
-    <a href="./seminars.html" aria-label="Seminars">Seminars</a>
-    <a href="./teaching-experience.html" aria-label="Teaching">Teaching</a>
-    <a href="./personal-interests.html" aria-label="Other Interests">Other</a>
-  </nav>
-</header>
+    <header id="navigation" aria-label="Main Navigation">
+        <a href="./index.html"><h1>Maksym Zubkov</h1></a>
+        <nav>
+            <a href="./index.html" aria-label="Home">Home</a>
+            <a href="./research.html" aria-label="Research">Research</a>
+            <a href="./seminars.html" aria-label="Seminars">Seminars</a>
+            <a href="./teaching.html" aria-label="Teaching">Teaching</a>
+            <a href="./personal.html" aria-label="Other Interests">Other</a>
+        </nav>
+    </header>
+    <canvas id="gridCanvas"></canvas>
+    <div id="corner"></div>
+    <div id="special-effects"></div>
 
-<main id="content">
-  <section id="seminar-schedule">
-      <h2>Math and ML Reading Group - Spring Semester 2024</h2>
-      <p>Welcome to our series of talks regarding mathematical foundation of neural networks and machine learning. Below is the schedule for the upcoming semester.</p>
-      <div class="info-box">
-        <p><b>Location:</b> Evans 762 from 2 pm to 3 pm on Fridays (Zoom upon request). To access Zoom sessions, please email <a href="mailto:mzubkov@berkeley.edu">me</a>.</p>
+    <div class="flex-container">
+      <div class="content-container">
+        <main id="content">
+          <section id="seminar-schedule">
+          <h2>Math and ML Reading Group - Spring Semester 2024</h2>
+          <p>Welcome to our series of talks regarding mathematical foundation of neural networks and machine learning. Below is the schedule for the upcoming semester.</p>
+          <div class="info-box">
+          <p><b>Location:</b> Evans 762 from 2 pm to 3 pm on Fridays (Zoom upon request). To access Zoom sessions, please email <a href="mailto:mzubkov@berkeley.edu">me</a>.</p>
 
-        <p><b>Organizers:</b> <a href="https://frances-dean.github.io">Franny Dean</a>, <a href="https://math.berkeley.edu/~yllpan/">Lewis Pan</a>, and <a href="https://maksymzubkov.info">Maksym Zubkov</a>.</p>
+          <p><b>Organizers:</b> <a href="https://frances-dean.github.io">Franny Dean</a>, <a href="https://math.berkeley.edu/~yllpan/">Lewis Pan</a>, and <a href="https://maksymzubkov.info">Maksym Zubkov</a>.</p>
 
-        <p><b>Goals:</b> These reading group aim to delve deep into the latest advancements in mathematical foundation of machine learning and neural networks.</p>
+          <p><b>Goals:</b> These reading group aim to delve deep into the latest advancements in mathematical foundation of machine learning and neural networks.</p>
 
-        <p>Below are the possible articles we're considering:</p>
-        <ul>
+          <p>Below are the possible articles we're considering:</p>
+          <ul>
           <li><a href="https://arxiv.org/abs/2004.06093" target="_blank">Topology of deep neural networks (arXiv:2004.06093)</a></li>
           <li><a href="https://arxiv.org/abs/1806.07366" target="_blank">Neural Ordinary Differential Equations (arXiv:1806.07366)</a></li>
           <li><a href="https://arxiv.org/abs/2211.11031" target="_blank">Aging with GRACE: Lifelong Model Editing with Discrete Key-Value Adaptors (arXiv:2211.11031)</a></li>
-        </ul>
-      </div>
-      </div>
-      <table border="1" cellspacing="0" cellpadding="5">
-        <thead>
-          <tr>
-            <th>Week</th>
-            <th>Date</th>
-            <th>Topic</th>
-            <th>Speaker</th>
-            <th>Zoom</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>February 9</td>
-            <td>Organizational meeting</td>
-            <td></td>
-            <td></td>
-          </tr>
-                <tr>
-                    <td>2</td>
-                    <td>February 16</td>
-                    <td>Geometry of Deep Polynomial Neural Networks</td>
-                    <td>Maksym Zubkov</td>
-                    <td>Link</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>February 23</td>
-                    <td>TBD</td>
-                    <td>Joshua Benjamin</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>March 1</td>
-                    <td>AI for Health Inspired by Physics Informed Neural Networks</td>
-                    <td>Franny Dean</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>March 8</td>
-                    <td>TBD</td>
-                    <td>Lewis Pan</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>March 15</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>March 22</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>March 29</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>April 5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>April 12</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>April 19</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>April 26</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>May 3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</main>
+          </ul>
+          </div>
 
+          <table border="1" cellspacing="0" cellpadding="5">
+          <thead>
+          <tr>
+          <th>Week</th>
+          <th>Date</th>
+          <th>Topic</th>
+          <th>Speaker</th>
+          <th>Links</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>February 9</td>
+          <td>Organizational meeting</td>
+          <td></td>
+          <td></td>
+          </tr>
+            <tr>
+                <td>2</td>
+                <td>February 16</td>
+                <td>
+                <a href="./media/slides/2024_spring_seminar_Feb_16.pdf" aria-label="Download slides">Geometry of Deep Polynomial Neural Networks</a>
+                </td>
+                <td>Maksym Zubkov</td>
+                <td>Zoom,
+                <a href="./media/spnn_3m1.ipynb" aria-label="Download code">code</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>February 23</td>
+                <td>Deep Learning Essentials: From Universal Approximation to <br> Backpropagation and Beyond</td>
+                <td>Joshua Benjamin</td>
+                <td><a href="https://berkeley.zoom.us/j/97451162209?pwd=cFkyRFM5VFlPUGVrcjFUUzFFek1aQT09" aria-label="Join a Zoom session">Zoom</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>March 1</td>
+                <td>AI for Health Inspired by Physics Informed Neural Networks</td>
+                <td>Franny Dean</td>
+                <td><a href="https://berkeley.zoom.us/j/97451162209?pwd=cFkyRFM5VFlPUGVrcjFUUzFFek1aQT09" aria-label="Join a Zoom session">Zoom</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>March 8</td>
+                <td>TBD</td>
+                <td>Lewis Pan</td>
+                <td><a href="https://berkeley.zoom.us/j/97451162209?pwd=cFkyRFM5VFlPUGVrcjFUUzFFek1aQT09" aria-label="Join a Zoom session">Zoom</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>March 15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>March 22</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>March 29</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>April 5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>April 12</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>April 19</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>April 26</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>May 3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+          </tbody>
+          </table>
+          </section>
+        </main>
+      </div>
+      <div id="image-block">
+          <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="A gif showing various aspects of Maksym Zubkov's life and work" aria-label="Life and work of Maksym Zubkov" />
+      </div>
+    </div>
 
-  <script>
+    <script>
     // JavaScript to draw the grid
     const canvas = document.getElementById("gridCanvas");
     const ctx = canvas.getContext("2d");
@@ -244,5 +243,8 @@
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
   </script>
+
+
+
 </body>
 </html>

@@ -1,0 +1,327 @@
+</body>
+</html>
+to display nicely on a cellphone body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI'; /* Modern font */
+}
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+#navigation {
+    color: #fff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 140px); /* Adjusted for mobile view */
+    height: 82px; /* Fixed height */
+    max-height: 82px;
+    position: fixed; /* Make the navigation bar fixed at the top */
+    top: 0;
+    left: 100px;
+    z-index: 11; /* Ensure navigation bar stays on top */
+    background-color: #333; /* Base color for gradient */
+    background-image: linear-gradient(90deg, #2C2C2C 25%, #333 50%, #454545 75%);
+    background-size: 400% 400%;
+    animation: GradientShiftReverse 3s ease infinite;
+}
+
+#navigation a {
+    color: #f0f0f0;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#navigation a:hover {
+    color: #4CAF50; /* Highlight color on hover */
+}
+
+#corner {
+    width: 100px;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: #2C2C2C; /* Match the header's base color */
+}
+
+#special-effects {
+    width: 100px;
+    position: fixed;
+    top: 92px;
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    background-color: #333; /* Match the header's base color */
+    background-image: linear-gradient(0deg, #555555 25%, #333 50%, #2C2C2C 75%);
+    background-size: 400% 400%;
+    animation: GradientShift 3s ease infinite;
+}
+
+@keyframes GradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes GradientShiftReverse {
+    0% {
+        background-position: 100% 100%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.content-container {
+    margin-top: 0px;
+    flex-basis: 81%; /* Allocate 80% of the space to content-container */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10; /* Ensure it's above the canvas */
+    max-width: 81%; /* Ensure it doesn't exceed 80% of the flex-container */
+}
+
+#image-block {
+    flex-basis: 19%; /* Allocate 20% of the space to image-block */
+    max-width: 19%; /* Ensure it doesn't exceed 20% of the flex-container */
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 10px;
+    text-align: top; /* Center-align the image */
+    align-self: top; /* Center it vertically within the flex-container */
+}
+
+#image-block img {
+    max-width: 100%; /* Make the image responsive within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#content {
+    color: #333; /* Text color for readability */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+#content h1, #content p {
+    margin-bottom: 5px; /* Spacing for readability */
+}
+
+canvas#gridCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Keeps the canvas behind the content */
+  width: 100%; /* Ensure full coverage */
+  height: 100%; /* Ensure full coverage */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Ensure items are laid out horizontally */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    width: 100%; /* Ensure the flex container takes up the full width */
+    margin-top: 110px; /* Adjusted to push content below the navigation */
+    padding-left: 100px; /* Adjust to accommodate the left navigation offset */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.profile-info {
+    /* Ensures that the content within the article is organized vertically */
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic {
+    display: block;
+    max-width: 100%; /* Ensures the image is never wider than its container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0px auto; /* Centers the image and adds some space around it */
+}
+
+.collapsible {
+    background-color: #555555; /* Bright blue background */
+    color: white; /* White text */
+    padding: 12px 20px; /* Larger padding for a bigger button */
+    font-size: 16px; /* Larger font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between buttons */
+    width: calc(100% - 40px); /* Adjust width accounting for padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background color and press animation */
+}
+
+.collapsible:hover, .collapsible:focus {
+    background-color: #222; /* Darker blue on hover/focus */
+    transform: translateY(-2px); /* Slight raise effect */
+    outline: none; /* Remove outline */
+}
+
+.collapsible:active {
+    background-color: #454545; /* Even darker green for active/press effect */
+    transform: translateY(1px); /* Press down effect */
+}
+
+.collapsible, .content {
+    /* Ensures that buttons and content blocks are full-width and block-level */
+    width: 100%;
+    margin-bottom: 10px; /* Adds some space between each section for clarity */
+}
+
+#content, .content p {
+    font-size: 18px; /* Larger font size for readability */
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: #333; /* Dark grey color for contrast */
+}
+
+h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px; /* Larger font size for headers */
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Ensure links are identifiable */
+}
+
+a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover, .accordion-button[aria-expanded="true"] {
+    background-color: #e7e7e7;
+}
+
+.accordion-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.accordion-title {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.content:not(.hidden) {
+    display: block; /* Or 'flex', depending on your content layout needs */
+}
+
+@media (max-width: 768px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Segoe UI';
+    }
+
+    #navigation {
+        width: 100%; /* Full width */
+        left: 0; /* Reset left positioning */
+        position: fixed; /* Keep it fixed at the top */
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        /* Ensure you know the height here to adjust content container margin */
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column; /* Stack child elements vertically */
+        padding-left: 0; /* Remove the left padding */
+        margin-top: 10px; /* Adjust this value based on the actual height of #navigation */
+    }
+
+    .content-container {
+        max-width: 100%; /* Allow both to take full width on smaller screens */
+        flex-basis: auto; /* Reset flex-basis for the vertical stacking */
+        width: calc(100% - 20px); /* Adjust width to account for padding or margin if necessary */
+        margin: 10px; /* Adjusted margin */
+        padding: 15px;
+        box-sizing: border-box; /* Important to prevent exceeding the viewport width */
+        order: 1; /* Make sure content container comes first */
+    }
+
+    #image-block {
+        max-width: 100%; /* Allow both to take full width on smaller screens */
+        flex-basis: auto; /* Reset flex-basis for the vertical stacking */
+        width: 100%; /* Take the full width */
+        text-align: center; /* Adjust if you want to center-align the image */
+        order: 2; /* This ensures the image block comes after the content container */
+        margin-top: 0px; /* Ensure there's space between content and image */
+        margin-bottom: 5px;
+    }
+
+    #image-block img {
+        width: 80%; /* Responsive width */
+        max-width: 200px; /* Maximum size */
+        margin: 0 auto; /* Center the image within its block */
+    }
+
+    #corner, #special-effects {
+        display: none; /* Hide elements not needed on small screens */
+    }
+
+    /* Reset any specific positioning that might interfere */
+    #navigation, #special-effects, .content-container, #image-block img {
+        left: 0;
+        position: relative;
+    }
+}

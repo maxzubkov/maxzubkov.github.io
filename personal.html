@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Basic Meta Tags -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO Meta Tags -->
@@ -48,20 +49,7 @@
 	  "interests": ["Volunteering", "YouTube video creation", "Private Tutoring"]
 	}
 	</script>
-
 </head>
-
-<style>
-
-    /* Math Grid background */
-    canvas#gridCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-  </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH" defer></script>
@@ -74,57 +62,54 @@
 </script>
 
 <body>
-<canvas id="gridCanvas"></canvas>
-  <header id="navigation" aria-label="Main Navigation">
+    <header id="navigation" aria-label="Main Navigation">
+        <a href="./index.html"><h1>Maksym Zubkov</h1></a>
+        <nav>
+            <a href="./index.html" aria-label="Home">Home</a>
+            <a href="./research.html" aria-label="Research">Research</a>
+            <a href="./seminars.html" aria-label="Seminars">Seminars</a>
+            <a href="./teaching.html" aria-label="Teaching">Teaching</a>
+            <a href="./personal.html" aria-label="Other Interests">Other</a>
+        </nav>
+    </header>
+    <!-- Add the canvas element here -->
+    <canvas id="gridCanvas"></canvas>
+    <div id="corner"></div>
+    <div id="special-effects"></div>
+    <div class="flex-container">
+      <div class="content-container">
+        <main id="content">
+          <section id="profile-section">
+            <div class="profile-container">
+            <article class="profile-info">
 
-    <a href="./index.html"><h1>Maksym (Max) Zubkov</h1></a>
-    <nav>
-      <a href="./index.html" aria-label="Home">Home</a>
-      <a href="./research-and-publications.html" aria-label="Research">Research</a>
-      <a href="./seminars.html" aria-label="Seminars">Seminars</a>
-      <a href="./teaching-experience.html" aria-label="Teaching">Teaching</a>
-      <a href="./personal-interests.html" aria-label="Other Interests">Other</a>
-    </nav>
-  </header>
+            <h2>Volunteering</h2>
+            <p>
+            Due to the war in Ukraine, I took a one-year off (Spring 2022 and Fall 2022). In the first 6 months of the war,
+            I founded a 501c3 non-profit organization called <a href="https://www.supportukrainewithus.com/">"Support Ukraine With Us"</a>
+            while residing in the U.S. I spent the next 6 months in Ukraine, specifically in Dnipro, Kyiv, and Lviv, working on various
+            humanitarian projects. In the span of that year, I was able to raise around $200,000 for aid.
+            </p>
+            <p>
+            This experience had a profound impact on me, ultimately influencing the direction of my current research since my return to Berkeley in January 2023.
+            </p>
 
-  <main id="content">
-  <section id="profile-section">
-    <div class="profile-container">
-		<img src="./media/interests.jpg" loading="lazy" class="photo" alt="At one of Ukrainian events" aria-label="Picture of Maksym Zubkov" />
-		<article class="profile-info">
-        <h1>Personal Interests</h1>
-		  <p>
-			Aside from academics, I have a wide range of interests that enrich my life.
-		  </p>
+            <h2>YouTube Channel</h2>
+            <p>
+            I maintain a <a href="https://www.youtube.com/mathforlife">YouTube channel</a> where I share insightful videos for fun and educational purposes.
+            It serves as a platform for me to explain complex mathematical problems in a comprehensible manner.
+            </p>
 
-		  <h2>Volunteering</h2>
-		  <p>
-			Due to the war in Ukraine, I took a one-year off (Spring 2022 and Fall 2022). In the first 6 months of the war, I founded a 501c3 non-profit organization called <a href="https://www.supportukrainewithus.com/">"Support Ukraine With Us"</a> while residing in the U.S. I spent the next 6 months in Ukraine, specifically in Dnipro, Kyiv, and Lviv, working on various humanitarian projects. In this year, I was able to raise around $200,000 for aid.
-		  </p>
-		  <p>
-			This experience had a profound impact on me, ultimately influencing the direction of my current research since my return to Berkeley in January 2023.
-		  </p>
+            </section>
 
-		  <h2>YouTube Channel</h2>
-		  <p>
-			I maintain a <a href="https://www.youtube.com/mathforlife">YouTube channel</a> where I share insightful videos for fun and educational purposes. It serves as a platform for me to explain complex mathematical problems in a comprehensible manner.
-		  </p>
+        </main>
+      </div>
+      <div id="image-block">
+          <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="A gif showing various aspects of Maksym Zubkov's life and work" aria-label="Life and work of Maksym Zubkov" />
+      </div>
+    </dev>
 
-		  <h2>Private Tutoring</h2>
-		  <p>
-			I have been offering private tutoring services since 2013, providing tailored lessons to students in various mathematical fields.
-		  </p>
-    </section>
-      </article>
-    </div>
-    <aside class="profile-video-container">
-      <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="A gif showing various aspects of Maksym Zubkov's life and work" aria-label="Life and work of Maksym Zubkov" />
-    </aside>
-  </section>
-
-  </main>
-
-  <script>
+    <script>
     // JavaScript to draw the grid
     const canvas = document.getElementById("gridCanvas");
     const ctx = canvas.getContext("2d");
@@ -159,5 +144,8 @@
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
   </script>
+
+
+
 </body>
 </html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <!-- Basic Meta Tags -->
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO Meta Tags -->
@@ -29,7 +30,7 @@
   <title>Maksym Zubkov</title>
 
   <script type="application/ld+json">
-  {
+    {
     "@context": "http://schema.org",
     "@type": "Person",
     "name": "Maksym Zubkov",
@@ -43,22 +44,10 @@
       "@type": "Organization",
       "name": "UC Berkeley",
       "url": "https://www.berkeley.edu/"
+      }
     }
-  }
   </script>
-  <!-- Styles moved to external stylesheet -->
 </head>
-<style>
-
-    /* Math Grid background */
-    canvas#gridCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-  </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHP8R9SMGH" defer></script>
@@ -71,61 +60,68 @@
 </script>
 
 <body>
-<canvas id="gridCanvas"></canvas>
-  <header id="navigation" aria-label="Main Navigation">
+    <header id="navigation" aria-label="Main Navigation">
+        <a href="./index.html"><h1>Maksym Zubkov</h1></a>
+        <nav>
+            <a href="./index.html" aria-label="Home">Home</a>
+            <a href="./research.html" aria-label="Research">Research</a>
+            <a href="./seminars.html" aria-label="Seminars">Seminars</a>
+            <a href="./teaching.html" aria-label="Teaching">Teaching</a>
+            <a href="./personal.html" aria-label="Other Interests">Other</a>
+        </nav>
+    </header>
 
-    <a href="./index.html"><h1>Maksym (Max) Zubkov</h1></a>
-    <nav>
-      <a href="./index.html" aria-label="Home">Home</a>
-      <a href="./research-and-publications.html" aria-label="Research">Research</a>
-      <a href="./seminars.html" aria-label="Seminars">Seminars</a>
-      <a href="./teaching-experience.html" aria-label="Teaching">Teaching</a>
-      <a href="./personal-interests.html" aria-label="Other Interests">Other</a>
-    </nav>
-  </header>
+    <canvas id="gridCanvas"></canvas>
+    <div id="corner"></div>
+    <div id="special-effects"></div>
+    <div class="flex-container">
 
-  <main id="content">
-  <section id="profile-section">
-    <div class="profile-container">
-      <img src="./media/my-image.jpg" loading="lazy" class="photo" alt="Maksym Zubkov" aria-label="Profile picture of Maksym Zubkov"/>
-      <article class="profile-info">
-        <h1>About Me</h1>
-        <p>
-          I am a 5th year Math Ph.D. student at UC Berkeley under the supervision of <a href="https://math.berkeley.edu/~nadler/" aria-label="David Nadler's website">David Nadler</a>.
-		  <br>
-          Here is my <a href="./CV.pdf" aria-label="Download my CV">CV</a>.
-		  <br>
-          My research interests are in Real Algebraic Geometry with a focus on polynomial maps, tensor decomposition, and their applications in Algebraic Statistics and Neural Networks.
-        </p>
-        <p>
-          <strong>Current Research:</strong>
-          My original problem is to study the topology of the space of real symmetric matrices with constrains that all principal minors are non-zero. If you want to learn more about my research, please check out my <a href="./research-and-publications.html" aria-label="Research">research page</a>.
-        </p>
-		<p>
-          <strong>Teaching</strong>:
-          Here is my <a href="./teaching-statement.pdf" aria-label="Download my teaching statement">teaching statement</a>. Please follow this <a href="./teaching-experience.html" aria-label="Teaching">link</a> to learn more about my teaching experience.
-        </p>
+    <div class="content-container">
+    <main id="content">
+        <section id="profile-section">
+            <div class="profile-container">
+              <h1>About Me</h1>
+                <p><strong>Name:</strong> Maksym Zubkov</p>
+                <p><strong>Email:</strong> mzubkov at berkeley dot edu</a></p>
+                <p>I am a 5th year Math Ph.D. student at UC Berkeley under the supervision of
+                  <a href="https://math.berkeley.edu/~nadler/" aria-label="David Nadler's website">David Nadler</a>.
+                  Here is my <a href="./media/documents/CV.pdf" aria-label="Download my CV">CV</a>.
+                  My research interests are in Real Algebraic Geometry with a focus on tensor decomposition and its application
+                  in Algebraic Statistics and Neural Networks.</p>
 
-		<p>
-          <strong>Other Interests</strong>:
-          Outside of school, I am pasionated about experimental film, nature exploration, reading, and volunteer work. In particular,
-		  I have founded a 501c3 non-profit organization <a href="https://www.supportukrainewithus.com/" aria-label="Support Ukraine With Us">Support Ukraine With Us</a>.
-        </p>
+                <article class="profile-info">
 
-		<h1>Contact</h1>
-      <p>
-        You can reach me by email at <a href="mailto:mzubkov@berkeley.edu" aria-label="Email me">mzubkov@berkeley.edu</a>.
-      </p>
-    </section>
-      </article>
-    </div>
-    <aside class="profile-video-container">
+                    <button class="collapsible">Current Research</button>
+                    <div class="content hidden">
+                        <p>My thesis problem is to study a geometry of principally regular matrices i.e. a space of real symmetric
+                          matrices with constraints that all principal minors are non-zero. If you want to learn more about my research,
+                          please check out my <a href="./research.html" aria-label="Research">research page</a>.</p>
+                    </div>
+                    <button class="collapsible">Teaching</button>
+                    <div class="content hidden">
+                        <p>I see teaching math as one of the way to share my appreciation of mathematical thinking with others.
+                          Here is my <a href="./teaching_statemen.pdf" aria-label="Download my teaching statement">teaching statement</a>.
+                          Please follow this <a href="./teaching.html" aria-label="Teaching">link</a> to learn more about my teaching experience.</p>
+                    </div>
+                    <button class="collapsible">Other Interests</button>
+                    <div class="content hidden">
+                        <p>Outside of school, I am passionate about experimental film, nature exploration, reading, and volunteering.
+                          In particular, I have founded a 501(c)(3) non-profit organization
+                          <a href="https://www.supportukrainewithus.com/" aria-label="Support Ukraine With Us">Support Ukraine With Us</a>.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+  </div>
+  <div id="image-block">
+      <img src="./media/profile_picture.png" alt="Maksym Zubkov" class="profile-pic" />
       <img src="./media/home-gif.gif" loading="lazy" class="profile-video" alt="A gif showing various aspects of Maksym Zubkov's life and work" aria-label="Life and work of Maksym Zubkov" />
-    </aside>
-  </section>
+  </div>
+</div>
 
-  </main>
-  <script>
+
+    <script>
     // JavaScript to draw the grid
     const canvas = document.getElementById("gridCanvas");
     const ctx = canvas.getContext("2d");
@@ -160,6 +156,21 @@
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
   </script>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const collapsibles = document.querySelectorAll('.collapsible');
+          collapsibles.forEach((btn) => {
+              btn.addEventListener('click', function () {
+                  this.nextElementSibling.classList.toggle('hidden');
+              });
+          });
+      });
+  </script>
+
+
+
+
 
 </body>
 </html>
