@@ -294,8 +294,8 @@ a:hover {
         overflow-x: auto; /* Allows horizontal scrolling */
         max-width: 100%; /* Allow both to take full width on smaller screens */
         flex-basis: auto; /* Reset flex-basis for the vertical stacking */
-        width: calc(100% - 20px); /* Adjust width to account for padding or margin if necessary */
-        margin: 20px; /* Adjusted margin */
+        width: 100% ; /* Adjust width to account for padding or margin if necessary */
+        margin: 5px; /* Adjusted margin */
         padding: 15px;
         box-sizing: border-box; /* Important to prevent exceeding the viewport width */
         order: 1; /* Make sure content container comes first */
