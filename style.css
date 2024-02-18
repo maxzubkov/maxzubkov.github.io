@@ -54,11 +54,17 @@ to display nicely on a cellphone body, html {
     margin: 0 15px;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    padding: 10px;
 }
 
 #navigation a:hover {
     color: #4CAF50; /* Highlight color on hover */
 }
+
+#navigation h1, #navigation nav {
+    margin: 10px 0;
+}
+
 
 #corner {
     width: 100px;
@@ -336,5 +342,19 @@ a:hover {
     th, td {
         font-size: 14px; /* Smaller font size for table content */
         padding: 4px; /* Adjust padding to fit smaller text */
+    }
+
+    #navigation {
+        flex-direction: row;
+    }
+
+    #navigation nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navigation a {
+        padding: 5px;
+        margin: 5px 0; /* More space between navigation links on smaller screens */
     }
 }
