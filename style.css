@@ -311,15 +311,17 @@ a:hover {
         max-width: 100%; /* Allow both to take full width on smaller screens */
         flex-basis: auto; /* Reset flex-basis for the vertical stacking */
         width: 100%; /* Take the full width */
+        text-align: center; /* Adjust if you want to center-align the image */
         order: 2; /* This ensures the image block comes after the content container */
         margin-top: 0px; /* Ensure there's space between content and image */
         margin-bottom: 5px;
     }
 
     #image-block img {
-        width: 95%; /* Responsive width */
-        max-width: 95%; /* Maximum size */
-        margin: 5px; /* Center the image within its block */
+        width: 95%; /* Make the image occupy the full width of its container */
+        max-width: 95%; /* Ensure it doesn't exceed the container's width */
+        margin: 5px auto; /* Optional: for centering if there's any specific need */
+        height: auto; /* Maintain the image's aspect ratio */
     }
 
     #corner, #special-effects {
