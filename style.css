@@ -291,12 +291,12 @@ a:hover {
     }
 
     .content-container {
-        overflow-x: auto; /* Allows horizontal scrolling */
+
         max-width: 100%; /* Allow both to take full width on smaller screens */
         flex-basis: auto; /* Reset flex-basis for the vertical stacking */
         width: 100% ; /* Adjust width to account for padding or margin if necessary */
-        margin: 5px; /* Adjusted margin */
-        padding: 15px;
+        margin: 10px; /* Adjusted margin */
+        padding: 10px;
         box-sizing: border-box; /* Important to prevent exceeding the viewport width */
         order: 1; /* Make sure content container comes first */
     }
@@ -316,9 +316,9 @@ a:hover {
     }
 
     #image-block img {
-        width: 90%; /* Adjust if necessary to account for any padding/margin */
-        max-width: 90%; /* Ensure it can grow up to the full width */
-        margin: 5px auto; /* Center the image if needed, remove horizontal margin */
+        width: 95%; /* Adjust if necessary to account for any padding/margin */
+        max-width: 95%; /* Ensure it can grow up to the full width */
+        margin: auto auto; /* Center the image if needed, remove horizontal margin */
     }
 
 
