@@ -291,6 +291,7 @@ a:hover {
     }
 
     .content-container {
+        overflow-x: auto; /* Allows horizontal scrolling */
         max-width: 100%; /* Allow both to take full width on smaller screens */
         flex-basis: auto; /* Reset flex-basis for the vertical stacking */
         width: calc(100% - 20px); /* Adjust width to account for padding or margin if necessary */
