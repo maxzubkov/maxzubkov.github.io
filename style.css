@@ -355,6 +355,6 @@ a:hover {
 
     #navigation a {
         padding: 5px;
-        margin: 5px 0; /* More space between navigation links on smaller screens */
+        margin: 10px 10px; /* More space between navigation links on smaller screens */
     }
 }
